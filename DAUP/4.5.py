@@ -1,0 +1,2 @@
+dtypes = df.dtypes
+dtypes
