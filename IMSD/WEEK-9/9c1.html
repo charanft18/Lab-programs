@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name Validation</title>
+  <script>
+    function validateName() {hb
+      var name = document.getElementById("name").value;
+      if (name.length >= 6 && isNaN(name[0])) {
+        alert("Valid Name");
+      } else {
+        alert("Invalid Name");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Name validation</h2>
+  <input type="text" id="name">
+  <button onclick="validateName()">Check</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <script>
+            var a = [10,11,20,12,30,40,50,60];
+            document.write("Orignal array : "+a+"<br>");
+            a.push(70,80,90);
+            document.write("Array after push: "+a+"<br>");
+            a.pop();
+            document.write("Array after pop: "+a+"<br>");
+            a.unshift(5,6,7);
+            document.write("Array after unshift: "+a+"<br>");
+            a.shift();
+            document.write("Array after shift: "+a+"<br>");
+            document.write("Array length: " + a.length+"<br>");
+            document.write("Array filter: " + a.filter(function(value){
+                return value >40;
+            })+"<br>");
+            document.write("Reversed array: " + a.reverse()+"<br>");
+            document.write("Sorted array: " + a.sort()+"<br>");
+            document.write("index of element 40 in array: " + a.indexOf(40) + "<br>");
+            document.write("array of elements between index 2 and 5: " + a.slice(2,5) + "<br>");
+            document.write("Remove elements from count from given index: "+a.slice(2,2)+"<br>");
+            document.write("Does array contain 40? " + a.includes(40) + "<br>");
+            document.write("Some > 45? " + a.some(x => x > 45) + "<br>");
+            var doubled = a.map(x => x * 2);
+            document.write("Map (x*2): " + doubled + "<br>");
+            var b = [270, 780];
+            var combined = a.concat(b);
+            document.write("After concat([70,80]): " + combined + "<br>");
+            document.write("Every > 5? " + a.every(x => x > 5) + "<br>");
+            document.write("Join with '-': " + a.join("-") + "<br>");
+            
+        </script>
+    </body>
+</html>

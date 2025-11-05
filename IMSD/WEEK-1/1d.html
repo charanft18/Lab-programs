@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thumbnail Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery a {
+            margin: 10px;
+            text-decoration: none;
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            border-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thumbnail Image Gallery</h1>
+    <div class="gallery">
+        <a href="fullsize1.jpg" target="_blank">
+            <img src="Natesh.jpg" alt="Image 1">
+        </a>
+        <a href="fullsize2.jpg" target="_blank">
+            <img src="image1.jpg" alt="Image 2">
+        </a>
+        <a href="fullsize3.jpg" target="_blank">
+            <img src="Natesh.jpg" alt="Image 3">
+        </a>
+      
+    </div>
+</body>
+</html>

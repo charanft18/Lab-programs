@@ -1,0 +1,35 @@
+<html>
+<head>
+  <h2>Fibonacci Series</h2>
+  <button onclick="showFibonacci()">fibonoci</button>
+  <button onclick="showFactorial()">factorial</button>
+
+  <script>
+    function showFibonacci() {
+    var n = prompt("Enter a number:");
+     var a = 0, b = 1, next;
+     var series = a + " " + b;
+
+      for (var i = 2; i < n; i++) {
+        next = a + b;
+        series = series + " " + next;
+        a = b;
+        b = next;
+
+
+      }
+
+      alert("Fibonacci series up to " + n + " terms is: " + series);
+    }
+function showFactorial() {
+      var n = prompt("Enter a number:");
+      var fact = 1;
+      for (var i = 1; i <= n; i++) {
+        fact = fact * i;
+      }
+      alert("Factorial of " + n + " is " + fact);
+    }
+
+  </script>
+</head>
+</html>

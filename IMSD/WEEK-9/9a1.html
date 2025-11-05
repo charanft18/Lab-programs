@@ -1,0 +1,17 @@
+<html>
+<body>
+  <h2>Factorial Program</h2>
+  <button onclick="showFactorial()">Factorial of number</button>
+
+  <script>
+    function showFactorial() {
+      var n = prompt("Enter a number:");
+      var fact = 1;
+      for (var i = 1; i <= n; i++) {
+        fact = fact * i;
+      }
+      alert("Factorial of " + n + " is " + fact);
+    }
+  </script>
+</body>
+</html>
