@@ -1,3 +1,4 @@
+// Updated commit message for lab programs of C
 #include<stdio.h>
 int main()
 {
