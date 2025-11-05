@@ -1,3 +1,4 @@
+// Updated C++ lab program commit
 #include <iostream>
 #include <cmath>
 using namespace std;
