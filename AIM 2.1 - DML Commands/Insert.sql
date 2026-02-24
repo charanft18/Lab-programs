@@ -1,3 +1,0 @@
--- AIM 2.1: INSERT Command
-INSERT INTO students VALUES('24B11CS234','Bala');
-INSERT INTO students VALUES('24B11CS381','Kiran');
